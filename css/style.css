@@ -12,8 +12,13 @@
     border-radius: 7px;
 }
 
+.project-picture-container{
+    padding: 0;
+}
+
 .project-picture{
-    width: 40vw;
+    width: 50vw;
+    margin: 0;
 }
 
 .project-title{
@@ -34,11 +39,60 @@
     margin: 15px 0px;;
 }
 
+/* Carousel maison*/
+
+.carousel-homemade{
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    list-style-type: none;
+}
+
+.project-screen{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .400s linear;
+    list-style-type: none;
+}
+
+.project-screen.active{    
+    opacity: 1;
+    transition: opacity .600s linear;
+    list-style-type: none;
+}
+
+.area_button{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cursor{
+    width: 50px;
+    height: 3px;
+    display: inline-block;
+    margin: 10px;
+    background:  rgba(95, 158, 160, 0.65);
+}
+
+.cursor.active{
+    background:  rgba(255, 255, 255, 0.65);
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100vh; /* 100% Full-height */
     position: absolute; /* Stay in place */
-    z-index: 9999; /* Stay on top */
+    z-index: 9999999; /* Stay on top */
     top: 0;
     left: -100vw;
     background-color: #2F2F2F;
@@ -72,7 +126,7 @@
     margin-left: 50px;
   }
   
-  }
+
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -92,11 +146,7 @@
     .project-picture-container{
         width: 90vw;
         min-width: 80vw;
-    }
-
-    .descritption-container-hidden{
-        visibility: hidden;
-        right:  -4000px;
+        height: 50vh;
     }
 
     .project-picture{
