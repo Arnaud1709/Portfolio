@@ -1,70 +1,123 @@
-
-
-body{
-    background-image: url(../images/background_sakura.jpg);
-    background-size: cover;
+.techno{
+   width: 50%;
+    margin: auto;
 }
 
-p{
-    font-weight: 500;
+.content_img{
+    text-align: center;
 }
 
-.download{
-    text-decoration: underline;
-    font-weight: bold;
+.photo{
+    height: 50vh;
+    border-radius: 7px;
 }
 
-.background_container{
-    background-color: rgba(250, 250, 250, 0.25);
-    border-radius: 10px;
+.project-picture{
+    width: 40vw;
+}
+
+.project-title{
     padding: 5%;
-    height: 34vh;
+    font-size: 2.2rem;
 }
 
-.link_project{
+.descritption-container{
+    height: 90%;
+}
+
+.description{
+    background-color: rgba(250,250,250,0.5);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px 20px;
+    margin: 15px 0px;;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100vh; /* 100% Full-height */
+    position: absolute; /* Stay in place */
+    z-index: 9999; /* Stay on top */
+    top: 0;
+    left: -100vw;
+    background-color: #2F2F2F;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    width: 100vw;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: black;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media only screen and (max-width: 770px){
+    .service-box{
+        width: 100%;
+    }
+
+    .project-title-container{
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .project-picture-container{
+        width: 90vw;
+        min-width: 80vw;
+    }
+
+    .descritption-container-hidden{
+        visibility: hidden;
+        right:  -4000px;
+    }
+
+    .project-picture{
+        width: 80vw
+    }
 }
 
-.link_project:hover{
-    text-decoration: none;
-    color: #666;
-}
+@media only screen and (max-width: 450px){
 
-
-
-@media only screen and (max-width: 768px) {
-    
-    body{
-        background-size: auto;
+    .descritption-container-hidden{
+        visibility: visible;
+        right: 0;
     }
 
-    .about-contentbox h2{
-        font-size: 24px;
+    .project-picture-container{
+        visibility: hidden;
+        right: -4000px;
     }
 
-    .description{
-        font-size: 15px;
-    }
-
-    .background_container{
+    .head-container{
         height: 40vh;
     }
-}
 
-
-
-@media only screen and (max-width: 375px) {
-
-    .about-contentbox h2{
-        font-size: 18px;
-    }
-
-    .description{
-        font-size: 14px;
-    }
-
-    .background_container{
-        height: 38vh;
-    }
 }

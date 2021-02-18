@@ -70,7 +70,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #fff;
+  color: #74CAC7;
   outline: none;
   text-decoration: underline;
 }
@@ -96,6 +96,7 @@ h6 {
 h1,
 h2 {
   font-size: 32px;
+  color: #74CAC7;
 }
 h3 {
   font-size: 30px;
@@ -138,11 +139,11 @@ video {
 }
 #video:after {
   content: '';
-  opacity: 0.85;
-  background: #4096ee; /* Old browsers */
-  background: -moz-linear-gradient(top, #C750C7 0%, #39ced6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #C750C7 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #C750C7 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  opacity: 0.55;
+  background: #2F2F2F; /* Old browsers */
+  background: -moz-linear-gradient(top, #2F2F2F 0%, #58585B 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2F2F2F 0%,#58585B 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2F2F2F 0%,#58585B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
   position:fixed;
   left:0;
@@ -177,7 +178,7 @@ video {
   border-radius: 10px;
 }
 .btn:hover, .btn:focus {
-  color:#fff;
+  color:#74CAC7;
   border-color:#fff;
   background:none;
 }
@@ -223,9 +224,9 @@ video {
   flex: 1 0 auto;
 }
 .preloader {
-  background: -moz-linear-gradient(to bottom, #C750C7 0%,#39ced6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(to bottom, #C750C7 0%,#39ced6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #C750C7 0%,#39ced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, #2F2F2F 0%, #58585B 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2F2F2F 0%,#58585B 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2F2F2F 0%,#58585B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#39ced6',GradientType=0 ); /* IE6-9 */
   height: 100%;
   left: 0;
@@ -301,7 +302,7 @@ video {
   left:0;
   right:0;
   top:0;
-  z-index:999;
+  z-index:99;
 }
 .container-fluid {
   padding:0 20px;
@@ -311,6 +312,7 @@ a#logo {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
+  z-index: 99;
 }
 .navbar {
   padding: 0;
@@ -338,7 +340,7 @@ a#logo {
   content:'';
   display:block;
   height: 2px;
-  background:#fff;
+  background:#74CAC7;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transform:scale(0);
@@ -368,7 +370,7 @@ a#logo {
   top: 50%;
   transform: translateY(-50%);
   right:0;
-  z-index: 199;
+  z-index: 95;
 }
 .social-icons {
   margin:0;
@@ -463,6 +465,7 @@ a#logo {
   box-shadow: 0 0 40px rgba(0,0,0,.3);
 }
 .about-contentbox {
+  margin-top: 80px;
   text-align:left;
   line-height:1.8;
 }
@@ -526,7 +529,7 @@ a#logo {
   font-weight: 300;
 }
 .services-list .item {
-  background-color: rgba(250,250,250,0.25);
+  background-color: rgba(250,250,250,0.5);
   border-radius: 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -540,6 +543,7 @@ a#logo {
   font-size:15px;
   padding:40px 20px;
   height:100%;
+  width: 20vw;
 }
 .services-list .item:hover {
   background-color: #fff;
@@ -820,7 +824,7 @@ textarea.form-control {
   left: 0;
   top: -21px;
   position: absolute;
-  z-index: 999;
+  z-index: 993;
 }
 .skills-row h6 {
   font-size: 16px;
