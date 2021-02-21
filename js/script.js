@@ -160,7 +160,7 @@ function openNav1() {
   function openNav3() {
     document.getElementById("myProject3").style.left = "0";
     document.getElementById("fullpage").style.zIndex = "999";
-    carousel = document.querySelector('#carouselHomemade1');
+    carousel = document.querySelector('#carouselHomemade3');
     pictures = carousel.querySelectorAll('li');
     if( pictures.length > 1){
       loadCaroussel();
@@ -181,7 +181,7 @@ function openNav1() {
   function openNav4() {
     document.getElementById("myProject4").style.left = "0";
     document.getElementById("fullpage").style.zIndex = "999";
-    carousel = document.querySelector('#carouselHomemade1');
+    carousel = document.querySelector('#carouselHomemade4');
     pictures = carousel.querySelectorAll('li');
     if( pictures.length > 1){
       loadCaroussel();
