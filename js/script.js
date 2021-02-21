@@ -1,11 +1,8 @@
-/* Script Carousel */
-const carousel = document.querySelector('.carouselHomemade');
-const pictures = carousel.querySelectorAll('ul>li');
+/* Script Carousel1 */
+let carousel = null;
+let pictures = null;
 let chrono = null;
 
-if( pictures.length > 1 ){
-    loadCaroussel();
-}
 
 
 function loadCaroussel(){
@@ -48,23 +45,25 @@ function loadCaroussel(){
 
 function carousselPlay( index = -1 ){
     
-    if( index === -1 ){
+    if( index === -1){
         console.log('carousel-homemade');
         autoPlay();
     }else{
         manuelPlay( index );
     }
-    
 }
 
-
-marker.setVisible(false);
-
+function stopPlay(){
+  for(picture of pictures){
+    picture.classList.remove("active");
+  }
+  carousel.querySelector(".area_button").remove();
+}
 
 
 function manuelPlay( index  ){
     //Selection du li qui à la classe active
-    const currentPicture = carousel.querySelector('ul > li.active');
+    const currentPicture = carousel.querySelector('li.active');
 
     //On recherche l'index du li qui à la classe active parmis tous les li
     const currentIndex = [].indexOf.call( pictures, currentPicture );
@@ -84,14 +83,14 @@ function manuelPlay( index  ){
         
     }
 
-    chrono = setTimeout( 'carousselPlay();' , 5000)
+    chrono = setTimeout( 'carousselPlay();' , 6000)
 }
 
 
 
 function autoPlay(   ){
     //Selection du li qui à la classe active
-    const currentPicture = carousel.querySelector('ul > li.active');
+    const currentPicture = carousel.querySelector('li.active');
 
     //On recherche l'index du li qui à la classe active parmis tous les li
     const currentIndex = [].indexOf.call( pictures, currentPicture );
@@ -111,44 +110,90 @@ function autoPlay(   ){
         cursors[currentIndex].classList.remove('active');
         cursors[index].classList.add('active');
 
-        chrono = setTimeout( 'carousselPlay();' , 5000)
+        chrono = setTimeout( 'carousselPlay();' , 6000)
    
 }
 
 /* Off-canvas du projet 1 */
 function openNav1() {
     document.getElementById("myProject1").style.left = "0";
-    document.getElementById("fullpage").style.zIndex = "999"
+    document.getElementById("fullpage").style.zIndex = "999";
+    carousel = document.querySelector('#carouselHomemade1');
+    pictures = carousel.querySelectorAll('li');
+    if( pictures.length > 1){
+      loadCaroussel();
+    }
   }
+  
   
   function closeNav1() {
     document.getElementById("myProject1").style.left = "-100vw";
-    document.getElementById("fullpage").style.zIndex = "95"
+    document.getElementById("fullpage").style.zIndex = "95";
+    chrono = null;
+    stopPlay();
+    carousel = null;
+    pictures = null;
   }
 
   /*  Off canvas du projet 2*/
   function openNav2() {
-    document.getElementById("myProject2").style.width = "0";
+    document.getElementById("myProject2").style.left = "0";
+    document.getElementById("fullpage").style.zIndex = "999";
+    carousel = document.querySelector('#carouselHomemade2');
+    pictures = carousel.querySelectorAll('li');
+    if( pictures.length > 1){
+      loadCaroussel();
+    }
   }
   
   function closeNav2() {
-    document.getElementById("myProject2").style.width = "-100vw";
+    document.getElementById("myProject2").style.left = "-100vw";
+    document.getElementById("fullpage").style.zIndex = "95";
+    chrono = null;
+    stopPlay();
+    carousel = null;
+    pictures = null;
+    
   }
 
   /*  Off canvas du projet 3*/
   function openNav3() {
-    document.getElementById("myProject3").style.width = "0";
+    document.getElementById("myProject3").style.left = "0";
+    document.getElementById("fullpage").style.zIndex = "999";
+    carousel = document.querySelector('#carouselHomemade1');
+    pictures = carousel.querySelectorAll('li');
+    if( pictures.length > 1){
+      loadCaroussel();
+    }
   }
   
+  
   function closeNav3() {
-    document.getElementById("myProject3").style.width = "-100vw";
+    document.getElementById("myProject3").style.left = "-100vw";
+    document.getElementById("fullpage").style.zIndex = "95";
+    chrono = null;
+    stopPlay();
+    carousel = null;
+    pictures = null;
   }
 
   /*  Off canvas du projet 4*/
   function openNav4() {
-    document.getElementById("myProject4").style.width = "0";
+    document.getElementById("myProject4").style.left = "0";
+    document.getElementById("fullpage").style.zIndex = "999";
+    carousel = document.querySelector('#carouselHomemade1');
+    pictures = carousel.querySelectorAll('li');
+    if( pictures.length > 1){
+      loadCaroussel();
+    }
   }
   
+  
   function closeNav4() {
-    document.getElementById("myProject4").style.width = "-100vw";
+    document.getElementById("myProject4").style.left = "-100vw";
+    document.getElementById("fullpage").style.zIndex = "95";
+    chrono = null;
+    stopPlay();
+    carousel = null;
+    pictures = null;
   }

@@ -643,6 +643,21 @@ a#logo {
   margin-bottom: 20px;
 }
 
+.portfolio-item .thumb-inner button{
+  position: absolute;
+  visibility: hidden;
+  background-color: #2F2F2F;
+  color: #D1D2D4;
+  border: hidden;
+  margin: 10px 0 0 50%;
+}
+
+.portfolio-item:hover .thumb-inner button{
+  position: absolute;
+  visibility: visible;
+
+}
+
 /*==============================================
 08. CONTACT BLOCK CSS
 ================================================*/

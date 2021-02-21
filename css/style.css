@@ -12,8 +12,15 @@
     border-radius: 7px;
 }
 
+.buttonNav:hover {
+    background-color: #2F2F2F;
+    color: #D1D2D4;
+}
+
 .project-picture-container{
-    padding: 0;
+    padding: 0 ;
+    margin-bottom: 5vh;
+    height: 40vh;
 }
 
 .project-picture{
@@ -24,6 +31,10 @@
 .project-title{
     padding: 5%;
     font-size: 2.2rem;
+}
+
+.screen{
+    height: 40vh;
 }
 
 .descritption-container{
@@ -41,20 +52,23 @@
 
 /* Carousel maison*/
 
+
+
+
 .carousel-homemade{
     padding-left: 0;
     list-style: none;
-    position: relative;
     height: 100%;
     overflow: hidden;
     margin: 0;
     list-style-type: none;
+    visibility: hidden;
 }
 
 .project-screen{
     position: absolute;
     top:0;
-    left: 0;
+    left: 7vw;
     opacity: 0;
     transition: opacity .400s linear;
     list-style-type: none;
@@ -81,7 +95,7 @@
     height: 3px;
     display: inline-block;
     margin: 10px;
-    background:  rgba(95, 158, 160, 0.65);
+    background:  #74CAC7;
 }
 
 .cursor.active{
